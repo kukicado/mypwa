@@ -1,5 +1,17 @@
 {
   "index": "/index.html",
+  "dataGroups": [
+    {
+      "name": "cache-todos",
+      "urls": ["https://wtg-apidayssanfrancisco.sandbox.auth0-extend.com/pwa"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    }
+  ],
   "assetGroups": [
     {
       "name": "app",
